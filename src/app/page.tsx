@@ -16,7 +16,7 @@ export default function Home() {
           <div className="social-icons">
             <a href="https://github.com/IGiotto12" target="_blank" rel="noopener noreferrer">
               <Image 
-                src="/images/icons/github.png" 
+                src="/icons/github.png" 
                 alt="GitHub"
                 width={24}
                 height={24}
@@ -24,7 +24,7 @@ export default function Home() {
             </a>
             <a href="https://www.instagram.com/igiotto12" target="_blank" rel="noopener noreferrer">
               <Image 
-                src="/images/icons/instagram.png" 
+                src="/icons/instagram.png" 
                 alt="Instagram"
                 width={24}
                 height={24}
@@ -32,7 +32,7 @@ export default function Home() {
             </a>
             <a href="https://act.ucsd.edu/myTritonlink20/display.htm" target="_blank" rel="noopener noreferrer">
               <Image 
-                src="/images/icons/ucsd.png" 
+                src="/icons/ucsd.png" 
                 alt="UCSD"
                 width={24}
                 height={24}
