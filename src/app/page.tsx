@@ -8,7 +8,7 @@ export default function Home() {
         <div className="intro-image">
           <h1>Jiaqi Wu (<b>吴佳麒</b>)</h1>
           <Image 
-            src="/selfie.jpg" 
+            src="/images/selfie.jpg" 
             alt="selfie of Jiaqi" 
             width={200} 
             height={200}
@@ -16,7 +16,7 @@ export default function Home() {
           <div className="social-icons">
             <a href="https://github.com/IGiotto12" target="_blank" rel="noopener noreferrer">
               <Image 
-                src="/icons/github.png" 
+                src="/images/icons/github.png" 
                 alt="GitHub"
                 width={24}
                 height={24}
@@ -24,7 +24,7 @@ export default function Home() {
             </a>
             <a href="https://www.instagram.com/igiotto12" target="_blank" rel="noopener noreferrer">
               <Image 
-                src="/icons/instagram.png" 
+                src="/images/icons/instagram.png" 
                 alt="Instagram"
                 width={24}
                 height={24}
@@ -32,7 +32,7 @@ export default function Home() {
             </a>
             <a href="https://act.ucsd.edu/myTritonlink20/display.htm" target="_blank" rel="noopener noreferrer">
               <Image 
-                src="/icons/ucsd.png" 
+                src="/images/icons/ucsd.png" 
                 alt="UCSD"
                 width={24}
                 height={24}
@@ -53,7 +53,7 @@ export default function Home() {
       <section className="project-section">
         <div className="project-card">
           <Image 
-            src="/db.jpeg" 
+            src="/images/db.jpeg" 
             alt="Admin Panel Project"
             width={300}
             height={200}
@@ -65,7 +65,7 @@ export default function Home() {
 
         <div className="project-card">
           <Image 
-            src="/notion.png" 
+            src="/images/notion.png" 
             alt="Notion"
             width={300}
             height={200}
@@ -77,7 +77,7 @@ export default function Home() {
 
         <div className="project-card">
           <Image 
-            src="/some1.gif" 
+            src="/images/some1.gif" 
             alt="cssalogo"
             width={300}
             height={200}
@@ -89,7 +89,7 @@ export default function Home() {
 
         <div className="project-card">
           <Image 
-            src="/agential.png" 
+            src="/images/agential.png" 
             alt="Agential Project Pic"
             width={300}
             height={200}
