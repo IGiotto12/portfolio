@@ -1,0 +1,122 @@
+.content {
+  margin-top: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #b7d1d2;
+  min-height: calc(100vh - 100px);
+}
+
+/* Styling for the research interest section */
+.research_interest {
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.research_interest h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.research_interest p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.pubs_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 2rem;
+}
+
+.pub_card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 2rem);
+  max-width: 350px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.image_container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pub_card h3 {
+  font-size: 20px;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.pub_card p {
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.pub_card a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #56aeae;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.pub_card a:hover {
+  background-color: #3d8e8e;
+  transform: translateY(-2px);
+}
+
+.pub_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pub_card:hover .card_image {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .pub_card {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .pub_card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pub_card {
+    width: 90%;
+  }
+} 

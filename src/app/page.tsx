@@ -1,103 +1,104 @@
-import Image from "next/image";
+import Image from 'next/image';
+import TypewriterText from '@/components/TypewriterText';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="page">
+      <section className="introduction">
+        <div className="intro-image">
+          <h1>Jiaqi Wu (<b>吴佳麒</b>)</h1>
+          <Image 
+            src="/selfie.jpg" 
+            alt="selfie of Jiaqi" 
+            width={200} 
+            height={200}
+          />
+          <div className="social-icons">
+            <a href="https://github.com/IGiotto12" target="_blank" rel="noopener noreferrer">
+              <Image 
+                src="/icons/github.png" 
+                alt="GitHub"
+                width={24}
+                height={24}
+              />
+            </a>
+            <a href="https://www.instagram.com/igiotto12" target="_blank" rel="noopener noreferrer">
+              <Image 
+                src="/icons/instagram.png" 
+                alt="Instagram"
+                width={24}
+                height={24}
+              />
+            </a>
+            <a href="https://act.ucsd.edu/myTritonlink20/display.htm" target="_blank" rel="noopener noreferrer">
+              <Image 
+                src="/icons/ucsd.png" 
+                alt="UCSD"
+                width={24}
+                height={24}
+              />
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="intro-text board">
+          <TypewriterText />
+        </div>
+      </section>
+
+      <section className="project-banner">
+        <h2>Projects Gallery</h2>
+        <div className="icon"></div>
+      </section>
+      
+      <section className="project-section">
+        <div className="project-card">
+          <Image 
+            src="/db.jpeg" 
+            alt="Admin Panel Project"
+            width={300}
+            height={200}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <h3>Fullstack Admin Panel <span className="badge">New!</span></h3>
+          <p>A modern fullstack system using Next.js, Prisma, and PostgreSQL, featuring authentication and API routes for secure data management.</p>
+          <a href="https://github.com/IGiotto12/admin_panel" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </div>
+
+        <div className="project-card">
+          <Image 
+            src="/notion.png" 
+            alt="Notion"
+            width={300}
+            height={200}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <h3>Student Dashboard</h3>
+          <p>A Template for school stuff management</p>
+          <a href="https://www.notion.so/Time-Regression-45d01a85b2e142c2a6c36a83345cd59a?pvs=4" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </div>
+
+        <div className="project-card">
+          <Image 
+            src="/some1.gif" 
+            alt="cssalogo"
+            width={300}
+            height={200}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <h3>CSSA App</h3>
+          <p>App development for UCSD CSSA</p>
+          <a href="https://github.com/IGiotto12/ucsdcssa-app-frontend" target="_blank" rel="noopener noreferrer">Learn More</a>
+        </div>
+
+        <div className="project-card">
+          <Image 
+            src="/agential.png" 
+            alt="Agential Project Pic"
+            width={300}
+            height={200}
+          />
+          <h3>Agential</h3>
+          <p>The encyclopedia of popular LLM-based agents prompting and fine-tuning methods.</p>
+          <a href="https://agential.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">Archieved</a>
+        </div>
+      </section>
+    </main>
   );
 }
