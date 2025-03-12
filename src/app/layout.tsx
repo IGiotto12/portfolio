@@ -23,7 +23,7 @@ export default function RootLayout({
           {children}
         </div>
         <footer>
-          <p>© 2025 Jiaqi's Portfolio | jiaqiwu1224@gmail.com</p>
+          <p>© 2025 Jiaqi&apos;s Portfolio | jiaqiwu1224@gmail.com</p>
         </footer>
       </body>
     </html>
